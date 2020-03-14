@@ -5,8 +5,8 @@ class Juridica extends Pessoa{
     private $inscricaoEstadual;
     private $razaoSocial;
     
-    public function __construct($CNPJ, $inscricaoEstadual, $razaoSocial, $nome, $email, $telefone) {
-        parent::__construct($nome, $email, $telefone);
+    public function __construct($CNPJ, $inscricaoEstadual, $razaoSocial, $nome, $email, $telefone, $endereco, $numero) {
+        parent::__construct($nome, $email, $telefone, $endereco, $numero);
         $this->CNPJ = $CNPJ;
         $this->inscricaoEstadual = $inscricaoEstadual;
         $this->razaoSocial = $razaoSocial;

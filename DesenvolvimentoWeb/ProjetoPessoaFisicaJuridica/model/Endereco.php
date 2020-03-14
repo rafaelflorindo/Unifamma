@@ -3,6 +3,13 @@ class Endereco {
     private $endereco, $bairro, $logradouro;
     private $cidade;//armazenar a referencia da classe enderedo
     
+    public function __construct($endereco, $bairro, $logradouro, $cidade) {
+        $this->endereco = $endereco;
+        $this->bairro = $bairro;
+        $this->logradouro = $logradouro;
+        $this->cidade = $cidade;
+    }
+
     public function getEndereco() {
         return $this->endereco;
     }
@@ -15,13 +22,4 @@ class Endereco {
     public function getCidade() {
         return $this->cidade;
     }
-    
-    public function __construct($endereco, $bairro, $logradouro, $cidade) {
-        $this->endereco = $endereco;
-        $this->bairro = $bairro;
-        $this->logradouro = $logradouro;
-        $this->cidade = $cidade;
-    }
-
-
-}
+ }

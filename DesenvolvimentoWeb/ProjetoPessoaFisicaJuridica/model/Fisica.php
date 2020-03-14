@@ -3,8 +3,8 @@ include("Pessoa.php");
 class Fisica extends Pessoa{
     private $CPF, $RG;
     
-    public function __construct($CPF, $RG, $nome, $email, $telefone) {
-        parent::__construct($nome, $email, $telefone);
+    public function __construct($CPF, $RG, $nome, $email, $telefone, $endereco, $numero) {
+        parent::__construct($nome, $email, $telefone, $endereco, $numero);
         $this->CPF = $CPF;
         $this->RG = $RG;
     }
