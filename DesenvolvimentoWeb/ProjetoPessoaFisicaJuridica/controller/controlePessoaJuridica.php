@@ -1,5 +1,10 @@
 <?php
 include("../model/Juridica.php");
+include("../model/Cidade.php");
+include("../model/Endereco.php");
+
+$cidade = new Cidade("Maringá", "PR");
+$endereco = new Endereco("Brasil", "Centro", "Av.", $cidade);
 
 $objPessoaJuridica = new Juridica(
                         "123.456.789/0001", 
@@ -7,7 +12,10 @@ $objPessoaJuridica = new Juridica(
                         "TecInfo",
                         "Rafael A. Florindo",
                         "rafaelflorindo@hotmail.com",
-                        "98401-4320"
+                        "98401-4320", 
+                        $endereco, 
+                        78
                         );
-
-var_dump($objPessoaJuridica);
+echo "<pre>";
+print_r($objPessoaJuridica);
+echo "</pre>";
