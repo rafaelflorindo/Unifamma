@@ -10,16 +10,24 @@
     <link href="bootstrap-4.4.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">NOME DO SISTEMA</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
     </nav>
 
 
     <div class="container">
-      <!-- Conteúdo aqui -->
+      <div class="row">
+        <div class="col-12">
+          &nbsp;
+        </div>
+      </div>            <div class="row">
+                    <div class="col-12">
+                      &nbsp;
+                    </div>
+                  </div>      <!-- Conteúdo aqui -->
       <h1>Formulário de Login</h1>
       <div class="row">
         <div class="col">

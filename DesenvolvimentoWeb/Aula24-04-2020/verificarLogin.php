@@ -1,8 +1,6 @@
 <?php
- session_start();
+ session_start();//abre a sessão
  if (!$_SESSION){
    header("location: formularioLogin.php");
   }
-
-
 ?>
