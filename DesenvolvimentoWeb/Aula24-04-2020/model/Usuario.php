@@ -41,7 +41,10 @@ class Usuario
 
   public function relatorioSimples(){
     if($this->getConexao()){
-      $query = "SELECT * FROM usuario";
+      $query = "SELECT
+      id, nome, email, login, senha, dataCadastro, dataAlteracao FROM usuario
+      order by nome asc
+      ";
       $busca = $this->conexao->query($query);
 
       $retornoBanco = array();//array dinamico

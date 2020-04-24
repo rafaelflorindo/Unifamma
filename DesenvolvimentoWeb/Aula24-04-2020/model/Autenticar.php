@@ -15,8 +15,8 @@ class Autenticar{
     return $this->autenticado;
   }
   public function autenticarUsuario($usuario, $senha){
-      $this->usuario = $usuario;
-      $this->senha = $senha;
+    $this->usuario = $usuario;
+    $this->senha = $senha;
 
       $this->autenticado = $this->buscarUsuario($this->usuario, $this->senha);
 
@@ -28,10 +28,11 @@ class Autenticar{
       }
   }
   public function buscarUsuario($usuario, $senha){
-    $senha = md5($senha);
+    $senha = md5($senha);//criptografia de 40 caracteres
+    //echo $senha; //202cb962ac59075b964b07152d234b70
+                //40bd001563085fc35165329ea1ff5c5ecbdbbeef
     if($this->getConexao()){
       $query = "SELECT * FROM usuario where login = '". $usuario . "' AND senha = '" . $senha. "'";//2
-
       $busca = $this->conexao->query($query);
       $retornoBanco = array();
       while ($linha = $busca->fetch_assoc()) {
