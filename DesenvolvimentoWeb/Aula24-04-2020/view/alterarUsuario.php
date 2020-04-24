@@ -18,7 +18,6 @@
 
   </head>
   <body>
-    <a class="navbar-brand" href="#">Usuário Autenticado: <?=$_SESSION["nome"];?></a>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="#">Expand at lg</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
@@ -140,6 +139,10 @@
    </div>
  </div>
 <footer class="bd-footer text-muted">
+
+    <a class="navbar-brand" href="#"><br>Usuário Autenticado: <?=$_SESSION["nomeUsuario"];?>
+    <br>E-mail: <?=$_SESSION["emailUsuario"];?>
+  </a>
 <p>&copy; Company 2017-2019</p>
 </footer>
     <script src="bootstrap-4.1.3-dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

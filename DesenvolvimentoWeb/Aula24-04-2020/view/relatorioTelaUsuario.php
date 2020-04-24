@@ -1,5 +1,5 @@
 <?php
-  require_once("../controller/verificarLogin.php");
+  require_once("../verificarLogin.php");
 ?>
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
@@ -18,7 +18,7 @@
 
   </head>
   <body>
-    <a class="navbar-brand" href="#">Usuário Autenticado: <?=$_SESSION["nome"];?></a>
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="#">Expand at lg</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,12 +51,9 @@
             <a class="nav-link" href="ProximaVersao.php">Próximas versões</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../controller/deslogar.php">Sair</a>
+            <a class="nav-link" href="../deslogar.php">Sair</a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-md-0">
-          <input class="form-control" type="text" placeholder="Search">
-        </form>
       </div>
     </nav>
 
@@ -76,7 +73,7 @@
     <div class="col">
       <div class="table-responsive">
          <table class="table">
-           <th>ID</th>
+           <th>ITEM</th>
            <th>NOME</th>
            <th>LOGIN</th>
            <th>E-MAIL</th>
@@ -88,12 +85,12 @@
             $tipo = "usuario";
             include("../controller/relatorio.php");
             //print_r($retorno);
-
+            $i = 1;
             foreach ($retorno as $value) {
               $id = $value["id"];
               ?>
               <tr>
-                <td><?=$value["id"];?></td>
+                <td><?=$i++?></td>
                 <td><?=$value["nome"];?></td>
                 <td><?=$value["login"];?></td>
                 <td><?=$value["email"];?></td>
